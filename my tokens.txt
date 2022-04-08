@@ -7,3 +7,6 @@ seal/unseal the Vault or re-authenticate.
 
 Unseal Key: 7HnZpOraHfIF78k7xsW4koBFUqIWb5JDqYWONYm62DA=
 Root Token: hvs.DJzOgkcTmDKpAb3LVTQOEMjw
+
+
+ `export root_token="hvs.DJzOgkcTmDKpAb3LVTQOEMjw"`
