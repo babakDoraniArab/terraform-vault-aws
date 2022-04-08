@@ -20,3 +20,10 @@ resource "aws_iam_role_policy_attachment" "attachment" {
     policy_arn = data.aws_iam_policy.policy.arn
   
 }
+
+resource "vault_aws_secret_backend_role" "role"{
+    backend = vault_aws_secret_backend.aws.path
+    name = "deployment-role"
+    credential_type = "assumed_role"
+    role_arns = [aws_iam_role.role.arn]
+}
