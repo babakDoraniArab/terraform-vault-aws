@@ -1,5 +1,5 @@
 locals {
-    tags = {
-        created_by = "terraform"
-    }
+  tags = {
+    created_by = "terraform"
+  }
 }
