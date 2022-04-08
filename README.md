@@ -42,3 +42,10 @@ then you can run vault status to see your vault status
 if you want to open vault ui, only needs to go the address below and use your current token. because you don't have any other authentication method in the first place , you have to use the token.
 
 Now open a browser on http://127.0.0.1:8200/ui
+
+
+
+# Terraform cloud account for the backend 
+by the way, I've configured the terraform remote backend on the terraform cloud. 
+it's so easy to create a new account on the terraform cloud and then write `terraform login` and create a token from your terraform cloud's profile page and enter it in the terminal and it's all set.
+
