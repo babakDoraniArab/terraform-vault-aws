@@ -5,6 +5,7 @@ data "aws_ssm_parameter" "token" {
 data "aws_ssm_parameter" "access_key" {
   name = "/app/vault/aws/AWS_ACCESS_KEY"
 }
+
 data "aws_ssm_parameter" "secret_key" {
   name = "/app/vault/aws/AWS_SECRET_KEY"
 }
@@ -20,7 +21,6 @@ data "aws_iam_policy_document" "policy" {
 }
 
 data "aws_caller_identity" "current" {
-
 }
 
 data "aws_iam_policy" "policy" {
