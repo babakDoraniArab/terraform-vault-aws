@@ -1,10 +1,10 @@
 terraform {
-    backend "remote" {
-            hostname = "app.terraform.io"
-            organization = "bablido"
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "bablido"
 
-            workspaces {
-            name = "vault-secrets"
-            }
+    workspaces {
+      name = "vault-secrets"
     }
+  }
 }
